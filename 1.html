@@ -3,16 +3,59 @@
 <head>
   <title>John Lennon</title>
   <meta charset="utf-8">
+  <style>
+    body{
+      margin: 40px;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    h1{
+      font-size: 400%;
+      font-family: Georgia;
+      text-align: center;
+      border-bottom: 1px solid grey;
+      margin: 0;
+      padding: 10px;
+    }
+    .saw {
+      color: grey;
+    }
+    #active {
+      color: red;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ul{
+      font-size: 150%;
+      font-family: Georgia;
+      border-right: 1px solid grey;
+      width: 100px;
+      margin: 0;
+      padding: 20px;
+    }
+    #grid #article{
+      padding-left: 20px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1><a href="index.html">The beatles</a></h1>
-  <ol>
-    <li><a href="1.html" target="_blank" title="John Lennon">Lennon</a></li>
-    <li><a href="2.html" target="_blank" title="Paul Mccartney">Paul</a></li>
-    <li><a href="3.html" target="_blank" title="George Harrison">George</a></li>
-    <li><a href="4.html" target="_blank" title="Ringo Starr">Ringo</a></li>
-  </ol>
-  <h2>존 레논</h2>
-  <p>John Ono Lennon MBE (legally John Winston Ono Lennon; born John Winston Lennon; 9 October 1940 – 8 December 1980) was an English singer, songwriter, and peace activist[1] who co-founded the Beatles, the most commercially successful band in the history of popular music. He and fellow member Paul McCartney formed a much-celebrated songwriting partnership. Along with George Harrison and Ringo Starr, the group would ascend to world-wide fame during the 1960s.<br><img src="lennon.jpg" width="30%"></p>
+  <h1><a href="index.html">The Beatles</a></h1>
+  <div id="grid">
+    <ul>
+      <li><a href="1.html" title="John Lennon" class="saw" id="active">Lennon</a></li>
+      <li><a href="2.html" title="Paul Mccartney" class="saw">Paul</a></li>
+      <li><a href="3.html" title="George Harrison" class="saw">George</a></li>
+      <li><a href="4.html" title="Ringo Starr" class="saw">Ringo</a></li>
+    </ul>
+    <div id="article">
+      <h2>John Lennon</h2>
+      <p>John Ono Lennon MBE (legally John Winston Ono Lennon; born John Winston Lennon; 9 October 1940 – 8 December 1980) was an English singer, songwriter, and peace activist[1] who co-founded the Beatles, the most commercially successful band in the history of popular music. He and fellow member Paul McCartney formed a much-celebrated songwriting partnership. Along with George Harrison and Ringo Starr, the group would ascend to world-wide fame during the 1960s.</p>
+    </div>
+  </div>
 </body>
 </html>
