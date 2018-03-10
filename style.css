@@ -1,0 +1,40 @@
+body{
+  margin: 40px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+h1{
+  font-size: 400%;
+  font-family: Georgia;
+  text-align: center;
+  border-bottom: 1px solid grey;
+  margin: 0;
+  padding: 10px;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#grid ul{
+  font-size: 150%;
+  font-family: Georgia;
+  border-right: 1px solid grey;
+  width: 100px;
+  margin: 0;
+  padding: 20px;
+}
+#grid #article{
+  padding-left: 20px;
+}
+@media(max-width:800px){
+  #grid{
+    display: block;
+  }
+  #grid ul{
+    border-right: none;
+  }
+}
